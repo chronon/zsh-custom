@@ -1,9 +1,9 @@
 # paths
 path+=(
-	"/usr/local/sbin"
-	"$HOME/machines/core/bin"
-	"$HOME/bin"
-	"/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+  "/usr/local/sbin"
+  "$HOME/machines/core/bin"
+  "$HOME/bin"
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 
 # env variables
