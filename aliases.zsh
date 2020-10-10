@@ -10,8 +10,8 @@ alias loadsys="cd $HOME/loadsys"
 alias core="cd $HOME/machines/core"
 
 function yarn() {
-	nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " yarn $@)"
+  nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " yarn $@)"
 }
 function grunt() {
-	nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " grunt $@)"
+  nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " grunt $@)"
 }
