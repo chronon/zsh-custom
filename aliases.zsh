@@ -8,10 +8,12 @@ alias timestamp="date +%s"
 alias repure="prompt_pure_async_init=0; async_stop_worker prompt_pure"
 alias loadsys="cd $HOME/loadsys"
 alias core="cd $HOME/machines/core"
+alias kdiff="kitty +kitten diff"
+alias permin="watch -i 2 docker-compose exec php bin/cake per_minute"
 
-function yarn() {
-  nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " yarn $@)"
-}
-function grunt() {
-  nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " grunt $@)"
-}
+# function yarn() {
+#   nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " yarn $@)"
+# }
+# function grunt() {
+#   nix-shell -p nodePackages.grunt-cli nodePackages.yarn --run "$(printf "%q " grunt $@)"
+# }

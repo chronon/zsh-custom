@@ -27,8 +27,10 @@ export NVM_DIR="$HOME/.nvm"
 bindkey "${terminfo[kcuu1]}" history-substring-search-up
 bindkey "${terminfo[kcud1]}" history-substring-search-down
 
-# broot
-source "$HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br"
+if [[ `uname` == "Darwin" ]]; then
+  # broot
+  source "$HOME/Library/Preferences/org.dystroy.broot/launcher/bash/br"
+fi
 
 # pure
 # https://github.com/sindresorhus/pure#options

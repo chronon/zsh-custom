@@ -1,4 +1,4 @@
-dc='docker-compose'
+dc='docker compose'
 localdata='-f docker-compose.yml -f docker-compose.localdata.yml'
 
 alias dcup="${dc} up -d"
@@ -21,5 +21,5 @@ function dctest3() {
 function dcmach() {
   local stack="$1"
   shift 1
-  ${dc} -f compose-${stack}.yml "$@"
+  docker compose -f compose-${stack}.yml "$@"
 }
